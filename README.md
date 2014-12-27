@@ -5,7 +5,7 @@ Contains maps with hyperlinks to Internet resources and local files, as well as 
 
 The objective of this initiative is to provide a means that will permit users to classify and access open-source information, materials and notes on the subjects being covered. The directories and maps can be freeley downloaded, adapted to their own needs, and perused by gitHub users.
 
-The maps are (hopefully) self-explanatory, and are initally being developed with XMind. A free version of this software can be downloaded from [XMind.net] (http://www.xmind.net/). 
+The maps are still at an experimental stage, and are initally being developed with XMind. A free version of this software can be downloaded from [XMind.net] (http://www.xmind.net/). Hopefully, they will become self-explanatory.
 
 The first subject being developed is Mathematics, and the directory structure corresponds to [MSC2010] (http://msc2010.org/Default.html). 
 
