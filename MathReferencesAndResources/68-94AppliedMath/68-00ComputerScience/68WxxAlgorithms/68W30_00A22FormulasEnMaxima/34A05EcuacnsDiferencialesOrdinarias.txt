@@ -1,0 +1,31 @@
+/* Solución de ecuaciones diferenciales ordnrs. en Maxima  */
+
+(%i3) 'diff(y,x)=x**2+1;
+                                  dy    2
+(%o3)                             -- = x  + 1
+                                  dx
+(%i4) ode2(%,y,x);
+                                     3
+                                    x
+(%o4)                           y = -- + x + %c
+                                    3
+
+(%i6) ic1(%o4,x=1,y=1);
+                                    3
+                                   x  + 3 x - 1
+(%o6)                          y = ------------
+                                        3
+
+/* Ejemplo tomado de Villate, Intro aos Sistemas dinâmicos */
+
+(%i15) eq1: 'diff(y, x) = (9*x^2 + y -1) / (4*y-x);
+                                           2
+                               dy   y + 9 x  - 1
+(%o15)                         -- = ------------
+                               dx     4 y - x
+(%i16) ode2(eq1,y,x);
+
+                             2            3
+(%o16)                    2 y  - x y - 3 x  + x = %c
+(%i17) method;
+(%o17)                               exact

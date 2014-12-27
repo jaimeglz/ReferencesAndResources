@@ -1,0 +1,35 @@
+ /* Derivación, integración y obtención de límites básicos  */
+
+	diff (x^n,x);
+
+ /* Resultado
+				      n - 1
+(%o11) 				   n x
+ */
+
+	diff(cos(x),x);
+
+ /* Resultado
+(%o58) 				     - SIN(x)
+ */
+
+
+	integrate(1/(1+x^3),x);
+
+/*	Límite en Maxima   */
+
+	limit( (2*x+1)/(3*x+2),  x,inf ); 
+
+/*	Resultado
+                                       2
+(%o1)                                  -
+                                       3
+*/
+
+/% 	Caso clásico */
+
+	f(x):= (x+1)^(1/x);
+	limit(f(x),x,0);
+/% Resultado
+(%o2) 	%e
+%/

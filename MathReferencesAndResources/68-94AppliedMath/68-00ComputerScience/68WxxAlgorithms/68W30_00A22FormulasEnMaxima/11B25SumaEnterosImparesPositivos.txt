@@ -1,0 +1,7 @@
+ 	/* Suma de enteros positivos impares con Maxima  */
+
+	n:5$ sum( (2*j) + 1, j, 0,n-1);
+
+	/* Resultado 
+(%o19)                                25
+	*/

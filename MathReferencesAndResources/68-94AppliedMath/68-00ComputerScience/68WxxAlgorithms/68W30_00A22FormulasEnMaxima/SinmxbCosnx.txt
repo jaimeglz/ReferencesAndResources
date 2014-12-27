@@ -1,0 +1,83 @@
+
+(%i1) f1(x):=sin(x); f2(x):=cos(x); f3(x):=sin(m*x); f4(x):=cos(n*x);
+(%o1)                           f1(x) := sin(x)
+(%o2)                           f2(x) := cos(x)
+(%o3)                          f3(x) := sin(m x)
+(%o4)                          f4(x) := cos(n x)
+(%i7) m:2;
+(%o7)                                  2
+(%i8) n:2;
+(%o8)                                  2
+(%i9) plot2d([f1,f3],[x,-10,10],[gnuplot_term,png],[gnuplot_out_file,"SinxSin2x.png"]);
+(%o9)                            SinxSin2x.png
+
+(%i9) plot2d([f1,f3],[x,-10,10],[gnuplot_term,jpeg],[gnuplot_out_file,"SinxSin2x.jpeg"]);
+(%o9)                                                                  SinxSin2x.jpeg
+
+
+
+(%i18) f1(x):=sin(x); f2(x):=cos(x); f3(x):=a*sin(m*x); f4(x):=b*cos(n*x);
+(%o18)                                                                 f1(x) := sin(x)
+(%o19)                                                                 f2(x) := cos(x)
+(%o20)                                                               f3(x) := a sin(m x)
+(%o21)                                                               f4(x) := b cos(n x)
+(%i22) a:1/2;
+(%i24) m:2;
+(%o24)                                                                        2
+(%i25) n:2;
+(%o25)                                                                        2
+(%i26) plot2d([f1,f3],[x,-10,10]);
+(%o26)                                                                  SinxSin2x.png
+
+(%i28) plot2d([f1,f3],[x,-10,10],[gnuplot_term,png],[gnuplot_out_file,"SinxSin2x.png"]);
+(%o28)                                                                  SinxSin2x.png
+
+(%i30) fsum(x):=f1(x)+f3(x);
+(%o30)                                                               fsum(x) := f1 + f3
+(%i31) plot2d([f1,f3],[x,-10,10]);
+(%o31) 
+(%i32) fsum(x):=f1(x)+f3(x);
+(%o32)                                                            fsum(x) := f1(x) + f3(x)
+(%i33) plot2d([f1,f3],[x,-10,10]);
+(%o33) 
+(%i34) f1(x):=sin(x); f2(x):=cos(x); f3(x):=a*sin(m*x); f4(x):=b*cos(n*x);f5(x):=sin(x)+( a*sin(m*x) );f6(x):=( a*sin(m*x) ) + ( b*cos(n*x) );
+(%o34)                                                                 f1(x) := sin(x)
+(%o35)                                                                 f2(x) := cos(x)
+(%o36)                                                               f3(x) := a sin(m x)
+(%o37)                                                               f4(x) := b cos(n x)
+(%o38)                                                          f5(x) := sin(x) + a sin(m x)
+(%o39)                                                        f6(x) := a sin(m x) + b cos(n x)
+(%i40) a:1/2;
+(%i41) b:1/2;
+(%i42) m:2;
+(%i43) n:2;
+
+(%i44) plot2d([f1,f3],[x,-10,10]);
+(%o44) 
+(%i45) plot2d([f2,f4],[x,-10,10]);
+(%o45) 
+(%i46) plot2d([f1,f5],[x,-10,10]);
+(%o46) 
+(%i47) plot2d([f6],[x,-10,10]);
+(%o47) 
+(%i48) f1(x):=( a*sin(m*x) ) + ( b*sin(n*x) ); f2(x):=( a*cos(m*x) ) + ( b*cos(n*x) ); f3(x):=( a*sin(m*x) ) + ( b*cos(n*x) );
+(%o48)                                                        f1(x) := a sin(m x) + b sin(n x)
+(%o49)                                                        f2(x) := a cos(m x) + b cos(n x)
+(%o50)                                                        f3(x) := a sin(m x) + b cos(n x)
+(%i51) a:1;
+(%o51)                                                                        1
+(%i52) b:1/2;
+                                                                              1
+(%o52)                                                                        -
+                                                                              2
+(%i53) m:1;
+(%o53)                                                                        1
+(%i54) n:2;
+(%o54)                                                                        2
+(%i55) plot2d([f1],[x,-10,10]);
+(%o55) 
+(%i56) plot2d([f2],[x,-10,10]);
+(%o56) 
+(%i57) plot2d([f3],[x,-10,10]);
+(%o57) 
+(%i58) 

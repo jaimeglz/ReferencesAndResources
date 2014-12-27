@@ -1,0 +1,37 @@
+ 	/* 	Obtención del siguiente miembro de una sucesión con Maxima
+		Conforme al ejemplo de Conway y Guy, Book of Numbers	 
+		posición 678, Differencing (tabla de diferencias)	 */
+
+(%i114) n : 8;
+(%o114)                                8
+(%i115) n:n+1;sum(  binomial( (n-1),i),i,0,4  );
+(%o115)                                9
+(%o116)                               163
+(%i117) a:6,b:22;c:64;d:163;
+(%o117)                                6
+(%o118)                               64
+(%o119)                               163
+(%i120) n:n+1;sum(  binomial( (n-1),i),i,0,4  );
+(%o120)                               10
+(%o121)                               256
+(%i122) a:a+1;b:b+a;c:c+b;d:d+c;
+(%o122)                                7
+(%o123)                               29
+(%o124)                               93
+(%o125)                               256
+(%i126) n:n+1;sum(  binomial( (n-1),i),i,0,4  );
+(%o126)                               11
+(%o127)                               386
+(%i128) a:a+1;b:b+a;c:c+b;d:d+c;
+(%o128)                                8
+(%o129)                               37
+(%o130)                               130
+(%o131)                               386
+(%i132) n:n+1;sum(  binomial( (n-1),i),i,0,4  );
+(%o132)                               12
+(%o133)                               562
+(%i134) a:a+1;b:b+a;c:c+b;d:d+c;
+(%o134)                                9
+(%o135)                               46
+(%o136)                               176
+(%o137)                               562

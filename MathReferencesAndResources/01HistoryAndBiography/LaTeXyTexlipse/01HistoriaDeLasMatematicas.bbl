@@ -1,0 +1,21 @@
+\begin{thebibliography}{1}
+
+\bibitem{Olver:2010:NHMF}
+{Olver, F. W. J.};~{Lozier, D. W.}; {Boisvert, R. F.}; and {Clark, C. W.}
+  (editors).
+\newblock {\em NIST Handbook of Mathematical Functions (OLBC 2010)}.
+\newblock Cambridge University Press, New York, 2010.
+\newblock Versión impresa acompañante de \cite{NIST:DLMF}.
+
+\bibitem{NIST:DLMF}
+{NIST Digital Library of Mathematical Functions}.
+\newblock http://dlmf.nist.gov/, Release 1.0.6 of 2013-05-06, 2013.
+\newblock Version en línea acompañante de \cite{Olver:2010:NHMF}.
+
+\bibitem{Edwards2002Pascals}
+Anthony~W.F. Edwards.
+\newblock {\em Pascal's Arithmetical Triangle: The Story of a Mathematical
+  Idea}.
+\newblock Johns Hopkins University Press, Baltimore, MD, 2002.
+
+\end{thebibliography}

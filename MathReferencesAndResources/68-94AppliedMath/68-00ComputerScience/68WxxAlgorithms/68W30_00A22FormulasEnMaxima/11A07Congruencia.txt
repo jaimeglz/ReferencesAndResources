@@ -1,0 +1,10 @@
+ 	/* Residuo mod() en Maxima  */
+ 	/* mod(n,m)  */
+	
+
+	/* Resultado típico:
+
+(%i3) mod (40+35,60);
+(%o3)       15
+
+	*/

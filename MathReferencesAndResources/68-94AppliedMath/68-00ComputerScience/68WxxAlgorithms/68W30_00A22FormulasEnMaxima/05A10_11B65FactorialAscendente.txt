@@ -1,0 +1,8 @@
+/* 05A10 11B65 68W30 Factorial ascendente en Maxima */
+
+(%i10) pochhammer(1,4);
+(%o10)                                 6
+(%i11) pochhammer(1,5);
+(%o11)                                24
+(%i12) pochhammer(1,5);
+(%o12)                                120

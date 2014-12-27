@@ -1,0 +1,10 @@
+ 	/* Función phi en Maxima  */
+ 	/* totient(n)  */
+	
+
+	/* Resultado típico:
+
+(%i1) totient(24);
+(%o1)                                  8
+
+	*/

@@ -1,0 +1,77 @@
+ 	/* Conjuntos en Maxima  */
+
+	set();
+	set(a, b, a);
+	A: {a, b};
+	B: {c,d};
+
+	/* Resultados
+(%o1) 				      {}
+(%o2)                                  {a, b}
+(%o3)                               {a, b}
+(%o4)                               {c, d}
+	*/
+
+	elementp(a,A);
+
+	/* Resultado
+(%o5)                                true
+	*/
+
+intersection(A,B);
+
+	/* Resultado
+(%o9)                                 {}
+	*/
+
+	powerset(A);
+
+	/*
+(%o10)                      {{}, {a}, {a, b}, {b}}
+	*/
+
+	cardinality ({a, a, b, c});
+
+	/*
+(%o13)                                 3
+	*/
+
+	cartesian_product ({0, 1}, {0, 1});
+	s: divisors(28);
+	lreduce ("+", args(s)) - 28;
+
+	/*
+(%o14)                  {[0, 0], [0, 1], [1, 0], [1, 1]}
+(%o15)                        {1, 2, 4, 7, 14, 28}
+	disjoin(28,%o15);
+(%o16)                          {1, 2, 4, 7, 14}
+	elementp(28,%o15);
+(%o17)                                 28
+	*/
+
+	makeset (i/j, [i, j], [[1, a], [2, b], [3, c], [4, d]]);
+	permutations ([a, b, c]);
+
+	/*
+                                  1  2  3  4
+(%o10)                           {-, -, -, -}
+                                  a  b  c  d
+(%o11) {[a, b, c], [a, c, b], [b, a, c], [b, c, a], [c, a, b], [c, b, a]}
+	*/
+	
+	map (f, {a, b, c});
+	s: {a, b, c};
+
+	/*
+(%o39)                        {f(a), f(b), f(c)}
+(%o40)                             {a, b, c}
+	*/
+
+	for si in s do print (concat (si, 1));
+
+	/*
+a1 
+b1 
+c1 
+(%o41)                               done
+	*/

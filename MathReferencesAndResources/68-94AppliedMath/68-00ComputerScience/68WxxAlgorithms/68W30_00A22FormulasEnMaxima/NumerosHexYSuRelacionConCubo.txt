@@ -1,0 +1,41 @@
+/* Números hex y su relación con cubo de n */
+
+/*	hex(n) = 1 + 6*triang(n-1)     */
+(%i5) 1 + 6*( n*(n-1) / 2 );
+(%o5)                           3 (n - 1) n + 1
+
+/*	Forma simplificada */
+(%i6) expand (%);
+                                   2
+(%o6)                           3 n  - 3 n + 1
+
+
+(%i7) hex(n) := 1 + 6*( n*(n-1) / 2 );
+                                           n (n - 1)
+(%o7)                     hex(n) := 1 + 6 (---------)
+                                               2
+(%i8) for n:1 step 1 thru 5 do display (hex(n) );
+                                  hex(1) = 1
+
+                                  hex(2) = 7
+
+                                  hex(3) = 19
+
+                                  hex(4) = 37
+
+                                  hex(5) = 61
+
+(%o8)                                done
+
+(%i10) for n:1 step 1 thru 5 do display (  sum ( hex(i),i,1,n )  );
+                           sum(hex(i), i, 1, n) = 1
+
+                           sum(hex(i), i, 1, n) = 8
+
+                           sum(hex(i), i, 1, n) = 27
+
+                           sum(hex(i), i, 1, n) = 64
+
+                          sum(hex(i), i, 1, n) = 125
+
+(%o10)                               done

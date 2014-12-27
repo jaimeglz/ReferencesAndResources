@@ -1,0 +1,14 @@
+ 	/* Obtener bases de entrada y salida actualmente utilizadas  */
+	/* Precaución: si se especifica un número con punto decimal, */
+	/* Maxima lo va a interpretar como  un número de base 10,    */ 		/* independientemente del valor de ibase.*/
+
+	 ibase; obase;
+
+/* Especificar bases de entrada y de salida */
+
+	ibase:10;obase:2;
+
+	/* Resultado típico:
+(%o1)                                 10
+(%o2)                                 10
+	*/

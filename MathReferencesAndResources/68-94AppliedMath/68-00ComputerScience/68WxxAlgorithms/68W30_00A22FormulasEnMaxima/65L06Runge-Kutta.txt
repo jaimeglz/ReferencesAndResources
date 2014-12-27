@@ -1,0 +1,16 @@
+/*	Ejemplo de aplicación del método Runge-Kutta 
+	tomado de Woollett, Maxima by Example, Ch. 3
+*/
+
+	fll(x) := [first(x),last(x),length(x)]$
+	declare(fll,evfun)$
+	fpprintprec:8$
+	points : rk (exp(-t) + u, u, -0.1, [ t, 2, 7, 0.01 ] )$
+	%, fll;
+	plot2d( [ discrete, points ], [ t, 0, 7],
+		[style,[lines,5]],[ylabel," "],
+		[xlabel,"t0 = 2, u0 = -0.1, du/dt = exp(-t) + u"])$
+
+/* "We have used our homemade function fll(x)...available with the Ch. 1 material. We have provided the definition of fll in the preface of this chapter. Instead of
+%, fll ;, you could use [%[1],last(%),length(%)]; to get the same information."
+*/

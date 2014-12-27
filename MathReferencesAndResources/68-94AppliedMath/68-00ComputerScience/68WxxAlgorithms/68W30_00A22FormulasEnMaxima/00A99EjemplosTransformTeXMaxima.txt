@@ -1,0 +1,12 @@
+ 	/* Ejemplos transformaciones tex() en Maxima  */
+
+	set(a, b, a);
+	tex(%);
+
+	tex( gamma(n) );
+
+	/* Resultados
+                  {a, b}
+	$$\left \{ \right \}$$
+	$$\Gamma\left(n\right)$$
+	*/

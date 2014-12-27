@@ -1,0 +1,38 @@
+/* 	Ecuación diferencial logística  
+
+	Donde: 
+		PoblN es la población en función del tiempo t
+		N_0 es la población inicial
+		r es el ritmo de crecimiento
+		K es la máxima población sustentable
+*/
+
+	PoblN(N_0,r,t):= N_0*%e^(r*t);
+	LogisticE(N_0,r,t,K) := PoblN(N_0,r,t) * (  1 - PoblN(N_0,r,t) / K  );
+
+/* 	Para un escenario en el que hubiera una cosecha o mortalidad DismAnual
+	por cada periodo t 
+*/
+
+	PoblN(N_0,r,t,DismAnual):= N_0*%e^(r*t) - DismAnual ;
+
+/* Resultado
+
+(%o14)                    PoblN(N_0, r, t) := N_0 %e
+                                                       PoblN(N_0, r, t)
+(%o15)  LogisticE(N_0, r, t, K) := PoblN(N_0, r, t) (1 - ---------------)
+                                                              K
+ */
+
+/* Posible graficación */
+	plot2d( LogisticE(2,.01,t,100),[t,0,325] );
+
+/* Función logística */
+
+	Population(t, rateGrowth, NInit, KMaxSustain) := (NInit * KMaxSustain) / (  NInit + ( (KMaxSustain - NInit) * %e^(-rateGrowth*t) )  );
+
+/* Escenario: Población inicial = 100, Pobl. sustentable = 1000 ) */
+
+	Population(20, 0.0205, 100, 1000);
+
+	plot2d ( Population(t, 0.0205, 100, 1000), [t,0,300]);

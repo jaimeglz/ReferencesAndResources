@@ -1,0 +1,23 @@
+/*	Reducción de funciones trigonométricas básicas en Maxima
+
+*/
+
+	sin(t)*cos(t);
+/*
+(%o1) 				 cos(t) sin(t)
+*/
+
+	trigreduce(%);
+
+/*
+			sin(2 t)
+(%o2) 			--------
+			   2
+
+(%i17) 1+tan(t)^2;
+				     2
+(%o17)			  tan (t) + 1
+(%i18) trigreduce(%);
+				       2
+(%o18)			    sec (t)
+*/
