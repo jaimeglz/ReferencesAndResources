@@ -1,7 +1,7 @@
 ReferencesAndResources
 ======================
 
-Contains maps with hyperlinks to Internet resources and local files, as well as short documentation on diverse knowledge topics. These maps are visible either as [mind maps] (http://en.wikipedia.org/wiki/Mind_map), or as web-pages that have been generated with mind mapping software. 
+Contains maps with hyperlinks to Internet resources and local files, as well as short documentation on diverse knowledge topics. These maps are visible either as [mind maps] (http://en.wikipedia.org/wiki/Mind_map), or as [web-pages that have been generated with mind mapping software] (http://jaimeglz.github.io/). 
 
 The objective of this initiative is to provide a means that will permit users to classify and access open-source information, materials and notes on the subjects being covered. The directories and maps can be freeley downloaded, adapted to their own needs, and perused by gitHub users.
 
