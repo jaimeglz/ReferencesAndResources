@@ -1,3 +1,0 @@
-/* Prueba de primalidad con Maxima */
-(%i7) primep(2333);
-(%o7)      true
