@@ -1,0 +1,88 @@
+    La introducción no-tan-corta a LaTeX
+------------------------------------------------------------------------
+    por Tobias Oetiker <oetiker@ee.ethz.ch>
+
+    (Nota: este texto codifica los caracteres según ISO-8859-1)
+    
+    Si quiere aprender cómo escribir sus documentos con LaTeX, esta
+    introducción es para usted.  No trata sobre configurar un sistema
+    LaTeX.  Aunque no es tan completa como el libro de Lamport,
+    debería bastar para la mayoría de los casos.
+
+    Para imprimir el documento, hay varias posibilidades:
+
+    a) Copie uno de los ficheros ps a su impresora:
+          
+              lcorta.ps  
+              lcorta-libro.ps  A4 / libro / doble cara
+       
+       NOTA para Abt IIIB: puede imprimir la versión libro en
+       la impresora VPP con
+
+  	  vpp -dest=etzj61 lcorta-libro.ps
+	o
+	  vpp -dest=etzd96 lcorta-libro.ps
+
+    b) Imprima el fichero lcorta2e.dvi con un controlador
+       dvi. (Necesita tener los tipos matemáticos de AMS instalados en
+       su sistema.  Si no los tiene, su controlador dvi protestará.)
+
+    c) Reconstruya desde cero todo el documento LaTeXando
+       lcorta2e.tex. (Si no tiene las clases AMS instaladas, las
+       partes relevantes del documento serán omitidas, pero éste se
+       formateará sin problemas.  Después de latexar el documento dos
+       veces, debería usar makeindex para generar un nuevo fichero
+       índice.
+
+       (para conseguir el símbolo euro de adobe correctamente instale
+        ftp://ftp.adobe.com/pub/adobe/type/win/all/eurofont.exe según
+        http://www.ctan.org/tex-archive/fonts/euro/latex/europs/README.europs)
+
+    Las versiones preformateadas del documento lo son para A4 doble
+    cara.  Si desea una versión de una sola cara, necesita remplazar
+    "twoside" por "oneside" en la lista de parámetros de la orden
+    \documentclass en lcorta2e.tex.  Para producir un libro pequeño (A5)
+    puede usar el fichero ps pregenerado o puede usar su controlador
+    dvi para reducir la salida y luego usar pstops para juntar las
+    páginas resultantes en el orden correcto.
+
+    Para producir un libro A5 desde la fuente, le recomiendo el
+    siguiente procedimiento, sobre el lcorta2e.dvi a dos caras:
+
+    *) dvips -x800 -P?? -olcorta.ps lcorta.dvi
+       (?? es el nombre de la impresora en que quiere imprimir el libro)
+
+    *) psbook lcorta2e.ps salida.ps
+
+    *) pstops "4:0L(27.8cm,-1.5cm)+1L(27.8cm,13.3cm)" salida.ps p1.ps
+       (p1.ps contiene ahora las páginas frontales)
+ 
+    *) pstops "4:2L(27.8cm,-1.5cm)+3L(27.8cm,13.3cm)" salida.ps p2.ps 
+       (p2.ps contiene ahora las páginas dorsales)
+
+    Si dispone de una impresora a dos caras:
+
+    *) pstops "4:0L(27.8cm,-1.5cm)+1L(27.8cm,13.3cm),2L(27.8cm,-1.5cm)+3L(27.8cm,13.3cm)" salida.ps lcorta-libro.ps
+
+    Si tiene versiones postscript de los tipos latex puede usar
+    (asegúrese de que su impresora tiene bastante memoria para esto)
+
+    *) dvips -Pcmz -olcorta.ps lcorta.dvi
+    *) psbook lcorta.ps salida.ps
+    *) pstops "4:0L@0.8(22.76cm,-0.6cm)+1L@0.8(22.76cm,13.45cm),3R@0.8(-1.38cm,16.25cm)+2R@0.8(-1.38cm,30.3cm)" salida.ps lcorta-libro.ps
+
+
+    Saludos
+    Tobias Oetiker   oetiker@ee.ethz.ch
+
+PD: Si tiene cualquier comentario, o simplemente encuentra útil el libro, 
+    por favor, hágamelo saber. 
+
+    Pueden seguirse pasos análogos reemplazando el papel por Carta 
+    americana (11in,8.5in) o A5 (148mm,210mm).
+
+--
+
+Traducido por 2:343/107.6@fidonet, carleos@uniovi.es.
+
+Actualización jlrn77@gmail.com
