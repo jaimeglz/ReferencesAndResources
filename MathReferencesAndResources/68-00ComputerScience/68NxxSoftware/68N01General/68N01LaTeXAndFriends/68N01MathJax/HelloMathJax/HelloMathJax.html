@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> From http://docs.mathjax.org/en/latest/start.html: MathJax example </title>
+    <script type="text/x-mathjax-config">
+		MathJax.Hub.Config
+			(
+				{tex2jax: 
+					{inlineMath: [['$','$'], ['\\(','\\)']]
+					}
+				}
+			);
+    </script>
+    <script type="text/javascript"
+  		src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+  </head>
+  <body>
+    <p>This web page contains math expression in LaTex</p>
+    
+    When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are:
+	$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+	
+	These are integrals:
+	
+	$$ \int \sqrt{\frac{1}{x}}\, dx $$
+	
+	$$ \int_{0}^{\pi} \cos^{2}{\left (x \right )}\, dx $$
+	
+	Logic:
+	
+	$$ y \vee \left(x \wedge y\right) $$
+    
+  </body>
+</html>
