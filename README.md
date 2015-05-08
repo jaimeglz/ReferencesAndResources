@@ -1,7 +1,7 @@
 ReferencesAndResources
 ======================
 
-Contains maps with hyperlinks to Internet resources and local files, as well as short documentation on diverse mathematics-related topics. The [web page ] (http://jaimeglz.github.io/) that has been generated from these maps is focused mainly on Python, R, and Maxima resources and tools for engineering and scientific computation.
+Contains maps with hyperlinks to Internet resources and local files, as well as short documentation on diverse mathematics-related topics.
 
 The maps in this project are intended to be displayed in a desktop or portable computer as [mind maps] (http://en.wikipedia.org/wiki/Mind_map), either as stand-alone or interconnected documents. The advantage of mind maps is that they can be easily updated, and can be used to generate web-pages. They can also be transformed to other formats, such as Open and MS Office documents and PDF files.  
 
