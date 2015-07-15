@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  	<meta charset="utf-8"/>
+<head>
+    <meta charset="utf-8"/>
     <title> MathJax example </title>
+    <link rel="stylesheet" href="StructElmntsStyle01.css">
     <script type="text/x-mathjax-config">
 		MathJax.Hub.Config
 			(
@@ -15,25 +16,114 @@
     <script type="text/javascript"
   		src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 	</script>
-  </head>
-  <body>
-  
-    <h1>This web page contains math expressions in LaTex </h1>
-    
-    	<h2> The next example comes from http://docs.mathjax.org/en/latest/start.html </h2> 
-    	When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are:
-		$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+</head>
+<body>
+	<header>
+		<a href="http://www.w3.org/html/logo/">
+		<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="91" height="35" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+		</a>
+    	<span>+ </span>
+    	<a href="http://www.mathjax.org">
+    	<img title="Powered by MathJax"
+    	src="http://cdn.mathjax.org/mathjax/badge/badge.gif"
+    	height=35 border="0" alt="Powered by MathJax" />
+		</a>
+		<p> </p>
+		<h1>Simple <span><a href="https://www.mathjax.org/">MathJax</a></span> examples</h1>
+		<p>Last modified: <time datetime="2015-06-27"> 2015/06/27 </time></p>
+	</header>
+	<nav>
+    	<li><span><a href="http://docs.mathjax.org/en/latest/index.html">Documentation</a></span></li>
+    	<li><span><a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">Basic tutorial</a></span></li>
+	</nav>
+	<section>
+ 		<header>      
+    		<h1>Examples</h1>
+    		Right click on any example expression, and select "Show Math As" -> "TeX commands" to display the TeX source code.
+		</header>
+		<article>
+    		<header>
+      			<h1><a href="">A formula</a></h1>
+      			    Infrastructure as a service (IaaS) cloud computing annual divestment costs:
+			</header>
+    		<p>
+			$$ C_{aDvst(IaaS)} = { C_{aSftwMaint} + C_{aPrgrmrSpprt} + C_{aCustSpprt} + \sum_{i=1}^n {U_i F_i}. } $$
+			Where $C_{aDvst(IaaS)}$ represents total annual diverstment costs;
+              $C_{aSftwMaint}$ is the annual cost of software maintenance, 
+              $C_{aPrfstnlSpprt}$ is the annual cost of professional support,
+              $C_{aCustSpprt}$ is the annual cost of customer support, 
+              $U_i$ is the level of usage, and $F_i$ the usage fee.
+			</p>
+        </article>
+ 		<article>
+    		<header>
+      			<h1><a href="">Simple algebra example</a></h1>
+              This example is a <mark>modified version</mark> of <a href="http://docs.mathjax.org/en/latest/start.html#putting-mathematics-in-a-web-page">http://docs.mathjax.org putting mathematics in a web-page</a>
+			</header>
+    		<p>
+    		When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are:
+    		</p>
+    		<p>
+			$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+			</p>
+		</article>
+		<article>
+			<header>
+	      		<h1> Simple integrals </h1>
+	    	</header>
+			<p>A couple of integrals:</p>
 	
+			$$ \int \sqrt{\frac{1}{x}}\, dx $$
 	
-		<h2>These are integrals: </h2>
+			$$ \int_{0}^{\pi} \cos^{2}{\left (x \right )}\, dx $$
+		</article>
+ 		<article>
+			<header>
+      			<h1> Simple logic expressions: </h1>
+			</header>
+      		<p>Logic:</p>
 	
-		$$ \int \sqrt{\frac{1}{x}}\, dx $$
+	  		$$ y \vee \left(x \wedge y\right) $$
+		
+			</article>
+	</section>
+    <aside>
+ 		<h1>Tag cloud</h1>
+		<ul class="tag-cloud">
+			<li><a href="" rel="tag" class="w1">Tex</a></li>
+			<li><a href="" rel="tag" class="w2">LaTex</a></li>
+			<li><a href="" rel="tag" class="w9">html5</a></li>
+			<li><a href="" rel="tag" class="w4">W3C</a></li>
+			<li><a href="" rel="tag" class="w5">MS IExplorer</a></li>
+			<li><a href="" rel="tag" class="w6">Firefox</a></li>
+			<li><a href="" rel="tag" class="w7">Opera</a></li>
+			<li><a href="" rel="tag" class="w8">Safari</a></li>
+			<li><a href="" rel="tag" class="w9">Multiplatform</a></li>
+			<li><a href="" rel="tag" class="w5">Windows</a></li>
+			<li><a href="" rel="tag" class="w10">mac</a></li>
+			<li><a href="" rel="tag" class="w8">Linux</a></li>
+		</ul>
+	</aside>
+    <footer>
+    	<header>
+      		<h1> Images </h1>
+		</header>
+      	<p></p>
+      	<a href="https://upload.wikimedia.org/wikipedia/commons/e/ea/Yanghui_triangle.gif">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Yanghui_triangle.gif" width="110" height="140" alt="Yang Hui's Triangle" title="Yang Hui's Triangle">
+      	<a href="https://upload.wikimedia.org/wikipedia/commons/1/1f/Algebra_by_Rafael_Bombelli.gif">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Algebra_by_Rafael_Bombelli.gif" width="110" height="140" alt="Bombelli's Marcury" title="Bombelli's Mercury">
+		<a href="https://upload.wikimedia.org/wikipedia/commons/6/66/TrianguloPascal.jpg">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/TrianguloPascal.jpg" width="140" height="140" alt="Pascal's Triangle" title="Pascal's Triangle">
+		<a href="https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg" width="110" height="140" alt="Isaac Newton" title="Isaac Newton">
+		<a href="https://upload.wikimedia.org/wikipedia/commons/6/6a/Gottfried_Wilhelm_von_Leibniz.jpg">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Gottfried_Wilhelm_von_Leibniz.jpg" width="110" height="140" alt="Gottfried Wilhelm Leibniz" title="Gottfried Wilhelm Leibniz">	
+		</a>
+		<figcaption>
+    		Yang Hui's Triangle, Bombelli's Mercury, Pascal's Triangle, Isaac Newton, Gottfried Wilhelm Leibniz
+  		</figcaption>
 	
-		$$ \int_{0}^{\pi} \cos^{2}{\left (x \right )}\, dx $$
-	
-		Logic:
-	
-		$$ y \vee \left(x \wedge y\right) $$
-    
-  </body>
+    </footer>
+</body>
 </html>
