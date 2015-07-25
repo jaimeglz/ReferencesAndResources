@@ -1,21 +1,18 @@
-html {
+html{
 		font-size:100.01%;
-		}
-		/* reset */
-		html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,hr,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfont,thead,tr,th,td{padding:0;margin:0;border:none;outline:none;vertical-align:baseline;font-family:inherit;font-size:100%;}dfn,i,cite,var,address,em{font-style:normal;}th,b,strong,h1,h2,h3,h4,h5,h6{font-weight:normal;}textarea,input,select{font-family:inherit;font-size:1em;}blockquote,q{quotes:none;}q:before,q:after,blockquote:before,blockquote:after{content:'';content:none;}ol,ul{list-style:none;}ins{text-decoration:none;}del{text-decoration:line-through;}table{border-collapse:collapse;border-spacing:0;}caption,th,td{text-align:left;}:focus{outline:none;}
-
-	html, body {
-			height:100%;
 	}
+		/* reset */	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,hr,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfont,thead,tr,th,td{padding:0;margin:0;border:none;outline:none;vertical-align:baseline;font-family:inherit;font-size:100%;}dfn,i,cite,var,address,em{font-style:normal;}th,b,strong,h1,h2,h3,h4,h5,h6{font-weight:normal;}textarea,input,select{font-family:inherit;font-size:1em;}blockquote,q{quotes:none;}q:before,q:after,blockquote:before,blockquote:after{content:'';content:none;}ol,ul{list-style:none;}ins{text-decoration:none;}del{text-decoration:line-through;}table{border-collapse:collapse;border-spacing:0;}caption,th,td{text-align:left;}:focus{outline:none;}
+
+	html, 
+    body {
+			height:100%;
+	     }
 
 	body {
-			font: .8125em/1.5 Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+			font: 1em/2 Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
 			background: #F5F5DC;
 			color: #4B0082;
-	}
-		header {
-			background: #E9967A;
-        }
+	     }
 		header, 
 		nav, 
 		section, 
@@ -23,98 +20,101 @@ html {
 		aside, 
 		footer {
 			display: block;
-		}
+		  }
 		section, 
 		article, 
 		aside {
 			border-style: solid;
     		border-width: 1px;
-		}
+		  }
 		header:hover, 
 		nav:hover, 
 		section:hover, 
 		aside:hover, 
 		footer:hover {
 				background: #FFDEAD
-		}
+		  }
 		a {
 			color: #9400D3;
 			text-decoration: none;
 			padding: 10px
-		}
+		  }
 		a:hover {
 			color: #40E0D0 
-		}
+		  }
        mark {
              background-color: yellow;
              color: black;
             }
 		p {
 			margin: 0 0 1em
-		}
+		  }
 		
 		header {
+		  	background: #E9967A;
 			color: #007e99;
 			font-size: 2.5em;
 			padding: 5px 30px
-		}
+		  }
+
 			header span {
 				color: #722
-			}
+			  }
 			header p {
 				font-size: 0.3em;
 				padding: 0 0;
 				margin 0
-			}
+			  }
 		nav {
+		  	background: #CD5C5C;
 			font-size: 1.5em;
 			margin: 5px 0;
 			padding: 10px 20px;
-			background: #CD5C5C;
-		}
+		  }
 			nav li {
 				display: inline;
 				margin: 0 15px;
 				color: #FFF5EE;
 				background:#E9967A
-			}
+			  }
 			nav li:first-child {
 				margin-left: 0
-			}
+			  }
 			nav span,
 			nav a {
 				padding: 3px 5px 5px;
 				color: #FFF5EE;
+			  }
+			nav a {
 				background:#8B4513
-			}
-			nav span {
-				background: #800000; 
-				}			
+			  }		
 			nav header {
   				margin-left: 0;
   				font-size: 12px;
   				padding: 0
 				}
-				
+			nav span {
+				background: #800000; 
+				}					
 		section {
 			float: left;
 			padding: 3px 0;
 			position: relative;
 			right: -2px;
 			width: 73%
-		}	
+		  }	
 			section article, p {
 				margin: 0 30px 20px;
 				padding: 5px 0 0;
 				position: relative
-			}
+			  }
 			section header {
 				font-size: 1em;
 				padding: 5px 20px;
-			}
+			  }
 			section h1 {
 				font-size: 2.3em;
-			}
+			 }
 			section 9 {
 				font-size: 1em;
 			}			
@@ -131,78 +131,109 @@ html {
 			position: relative;
 			right: 3px;
 			width: 23%
-		}
+		  }
 	
 			aside h1 {
 				color: #8A2BE2;
 				font-size: 1.8em
-			}
+			  }
 			aside .tag-cloud {
 				padding: 15px 35px 5px 0;
 				text-align: center
-			}
+			  }
 				aside .tag-cloud li {
 					display: inline
-				}
+                  }
 				aside .tag-cloud a {
 					color: #69a
-				}
+				  }
 				aside .tag-cloud a:hover {
 					color: #a67
-				}
+				  }
 				aside .tag-cloud .w1 {
 					font-size: .8em;
 					color: #A0522D
-				}
+				  }
 				aside .tag-cloud .w2 {
 					font-size: 1em;
 					color: #800000
-				}
+				  }
 				aside .tag-cloud .w3 {
 					font-size: 1.1em;
 					color: #32CD32
-				}
+				  }
 				aside .tag-cloud .w4 {
 					font-size: 1.2em;
 					color: #20B2AA
-				}
+				  }
 				aside .tag-cloud .w5 {
 					font-size: 1.3em;
 					color: #0000FF
-				}
+				  }
 				aside .tag-cloud .w6 {
 					font-size: 1.4em;
 					color: #008000
-				}
+				  }
 				aside .tag-cloud .w7 {
 					font-size: 1.5em;
 					color: #FF4500
-				}
+				  }
 				aside .tag-cloud .w8 {
 					font-size: 1.6em;
 					color: #FF00FF
-				}
+				  }
 				aside .tag-cloud .w9 {
 					font-size: 1.8em;
 					color: #DC143C
-				}
+				  }
 				aside .tag-cloud .w10 {
 					font-size: 2em;
 					color: #FF1493
-				}
+				  }
 		figcaption {
 			font-style:italic;
-			font-size: 1.0em;
+			font-size: 1.25em;
 			width: 100%;
-			padding: 8px, 5px
-		}
+            padding-top: 0px;
+            padding-right: 5px;
+            padding-bottom: 15px;
+            padding-left: 10px;
+		  }
 		footer {
 			clear: both;
 			color: #4B0082;
-			padding: 5px 10px
-		}
-				footer header, footer h1 {
+            padding: 10px
+		  }
+				footer header, 
+                footer h1 {
 					color: #4B0082;
 					font-size: 1.5em;
-					padding: 8px 10px
-				}
+                    padding: 8px 10px                  
+				  }
+                footer h2,
+                footer h3,
+                footer dt,
+                footer dd {
+					color: #4B0082;
+					font-size: 1.5em;
+                    padding-top: 0px;
+                    padding-right: 5px;
+                    padding-bottom: 1px;
+                    padding-left: 20px;
+				  }
+                footer li {
+					color: #4B0082;
+					font-size: 1.5em;
+                    padding-top: 0px;
+                    padding-right: 5px;
+                    padding-bottom: 5px;
+                    padding-left: 10px;
+				   }
+                footer video,
+                footer iframe {  
+	                position: relative;
+	                top: 10px;
+	                left: 10px;
+	                margin-top: auto;
+                    margin-bottom: 50px;
+}
